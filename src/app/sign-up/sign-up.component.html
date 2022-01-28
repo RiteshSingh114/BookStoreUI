@@ -1,0 +1,62 @@
+<form [formGroup] = "Signup" (ngSubmit)="SignUp()">
+  <div class="form-group mb-3">
+    <label for="FirstName">First Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="FirstName"
+      aria-describedby="emailHelp"
+      name="firstName" 
+      formControlName="firstName"
+    />
+  </div>
+  <div class="form-group mb-3">
+    <label for="LastName">Last Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="LastName"
+      aria-describedby="emailHelp"
+      name="lastname" 
+      formControlName="lastname"
+    />
+  </div>
+  <div class="form-group mb-3">
+    <label for="email">Email address</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      aria-describedby="emailHelp"
+      placeholder="Enter email"
+      name="email" 
+      formControlName="email"
+    />
+    <small id="emailHelp" class="form-text text-muted"
+      >We'll never share your email with anyone else.</small
+    >
+  </div>
+  <div class="form-group mb-3">
+    <label for="Password">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="Password"
+      placeholder="Password"
+      name="password" 
+      formControlName="password"
+    />
+  </div>
+  <div class="form-group mb-3">
+    <label for="ConfirmPassword">Confirm Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="ConfirmPassword"
+      placeholder=" Enter Password again"
+      name="confirmPassword" 
+      formControlName="confirmPassword"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
