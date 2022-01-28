@@ -7,12 +7,14 @@ import {HttpClientModule} from '@angular/common/http';
 import { AllBooksComponent } from './all-books/all-books.component';
 import { AddBookComponent } from './add-book/add-book.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AllBooksComponent,
-    AddBookComponent
+    AddBookComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
