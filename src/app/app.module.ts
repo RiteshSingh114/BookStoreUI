@@ -8,13 +8,15 @@ import { AllBooksComponent } from './all-books/all-books.component';
 import { AddBookComponent } from './add-book/add-book.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AllBooksComponent,
     AddBookComponent,
-    SignUpComponent
+    SignUpComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
